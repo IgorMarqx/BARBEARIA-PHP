@@ -1,0 +1,17 @@
+header {
+    margin-top: 0px !important;
+    margin-bottom: 10px;
+}
+.navbar-center{
+    background-color: lightgray;
+}
+.col-serv{
+    background-color: aliceblue;
+    border-right: 10px;
+    border-right-color: #000;
+}
+.col-proj{
+    background-color: aliceblue;
+    border-right: 1px;
+    border-right-color: cadetblue;
+}

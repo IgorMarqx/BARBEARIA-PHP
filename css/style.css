@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.topo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #000;
+    height: 7vh;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.4rem;
+    
+    list-style: none;
+}
+
+
+.nav li a{
+    color: #fff;
+    transition: all .5s;
+}
+
+.nav li a:hover{
+    color: #000;
+    padding: 2.1rem 2.1rem;
+    transition: all .5s;
+    border-radius: .2rem;    
+}
+
+.custom-container{
+    width:100%;
+}
+
+.custom-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 160px;
+    background-image: url(../img/fundo.jpg);
+    background-size: 30%;
+    background-position: center;
+    background-attachment: fixed;
+
+    filter: grayscale(.5);
+}
+
+@media screen and (max-width: 600px){
+    .custom-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        height: 160px;
+        background-image: url(../img/fundo.jpg);
+        background-size: 100%;
+
+        filter: grayscale(.5);
+    }
+}
+
+/* CONTEUDO */
+.custom-container h1{
+    color: #fdfdfd;
+    background-color: #000000;
+
+    padding: 1rem;
+    border-radius: 1rem;
+
+    opacity: .7;
+    font-weight: 300;
+}
+
+.card{
+    width: 100%;
+    height: 340px;
+
+    background-image: url(../img/corte1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    filter: grayscale(1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 1rem;
+    transition: all .5s;
+}
+
+.card:hover{
+    filter: grayscale(0);
+
+    transition: all .5s;
+    transform: scale(1.05);
+    
+    margin-bottom: .5rem;
+    border-radius: 0;
+
+    box-shadow: 1px 3px 17px -5px rgba(0,0,0,0.75);
+}
+
+.customName{
+    background-color: #000;
+    color: #fff;
+    
+    padding: 1rem;
+    border-radius: 1vh;
+
+    opacity: .8;
+}
+
+.btn-custom{
+    background: #ffffff;
+    border-radius: 1vh;
+
+    color: #000000;
+    border: none;
+    padding: .7rem;
+
+    font-size: 1.7rem;
+    transition: all .8s;
+
+    font-weight: 400;
+}
+
+.btn-custom:hover{
+    background-color: #000000;
+    color: #fff;
+
+    transition: all .8s;
+}
+
+.card2{
+    width: 100%;
+    height: 340px;
+    
+    background-image: url(../img/corte2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    
+    filter: grayscale(1);
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 1rem;
+    transition: all .5s;
+}
+
+.card2:hover{
+    filter: grayscale(0);
+    
+    transition: all .5s;
+    transform: scale(1.05);
+    
+    border-radius: 0;
+    margin-bottom: .5rem;
+
+    box-shadow: 1px 3px 17px -5px rgba(0,0,0,0.75);
+}
+
+.card3{
+    width: 100%;
+    height: 350px;
+    
+    background-image: url(../img/corte3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    
+    filter: grayscale(1);
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 1rem;
+    transition: all .5s;
+}
+
+.card3:hover{
+    filter: grayscale(0);
+    
+    transition: all .5s;
+    transform: scale(1.05);
+    
+    border-radius: 0;
+    margin-bottom: .5rem;
+
+    box-shadow: 1px 3px 17px -5px rgba(0,0,0,0.75);
+}
+
+.card4{
+    width: 100%;
+    height: 350px;
+    
+    background-image: url(../img/corte4.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    
+    filter: grayscale(1);
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 1rem;
+    transition: all .5s;
+}
+
+.card4:hover{
+    filter: grayscale(0);
+    
+    transition: all .5s;
+    transform: scale(1.05);
+    
+    border-radius: 0;
+    margin-bottom: .5rem;
+
+    box-shadow: 1px 3px 17px -5px rgba(0,0,0,0.75);
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading h3{
+    color: #000;
+
+    font-weight: 500;
+}
+
+.heading h4{
+    background-color: #000;
+    color: #fff;
+
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 1.3rem;
+
+    border-radius: 1vh;
+}
+
+.col-md-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid red; */
+    /* background-color: #222; */
+}
+
+.title-custom{
+    font-weight: 500;
+
+    font-size: 2.2rem;
+}
+/* CONTEUDO */
