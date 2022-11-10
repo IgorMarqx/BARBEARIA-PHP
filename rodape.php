@@ -1,4 +1,4 @@
 <footer>
     <hr>
-    <?= date("Y"); ?> &copy; Barbeariaseuestilo.com - Todos os Direitos Reservados
+    <center><?= date("Y"); ?> &copy; Barbeariaseuestilo.com - Todos os Direitos Reservados</center>
 </footer>

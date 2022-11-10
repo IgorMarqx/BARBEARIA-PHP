@@ -7,6 +7,6 @@
 	 Telefone: <input type="tel" class="form-control" name="telefone"/>
 	 Assunto: <input type="text" class="form-control" name="assunto"/>
 	 Mensagem:<textarea class="form-control" name="mensagem" rows="5" cols="10"></textarea><br>
-	 <button type="button" class="btn btn-outline-dark">Enviar</button>
+	 <button type="submit" class="btn btn-outline-dark">Enviar</button>
   </form>
 </div>

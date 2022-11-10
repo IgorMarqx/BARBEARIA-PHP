@@ -6,7 +6,7 @@
     $assunto = $_POST['assunto'];
     $mensagem = $_POST['mensagem'];
 
-   $sql = "INSERT INTO faleconosco (nome, 
+   $sql = "INSERT INTO barbearia (nome, 
     email, telefone, assunto, mensagem) 
     VALUES ('$nome','$email','$telefone',
     '$assunto','$mensagem')";
@@ -21,3 +21,4 @@
        echo "<a href='?pg=faleconosco'>
        Cadastrar Novamente</a><br>";
     }
+?>
