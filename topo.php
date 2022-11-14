@@ -15,13 +15,14 @@ include("config.inc.php");
 
             ?>
                 <li>
-                    <a href="?pg=<?= $dados['link']; ?>"><?= $dados['nome']; ?> asdsa</a>
+                    <a href="?pg=<?= $dados['link']; ?>"><?= $dados['nome']; ?></a>
                 </li>
             <?php
             }
             ?>
-            <li><a href="">Sobre nós</a></li>
-            <li><a href="">Serviços</a></li>
+            <li><a href="?pg=quemsomos">Sobre nós</a></li>
+            <li><a href="?pg=servicos">Serviços</a></li>
+            <li><a href="?pg=agendamento">Agendamento</a></li>
             <li><a href="?pg=faleconosco">Fale conosco</a></li>
         </ul>
     </div>
