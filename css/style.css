@@ -286,3 +286,54 @@ footer{
     /* border: 1px solid red; */
     width: 100%;
 }
+
+
+.tbl-head {
+    background-color: #212529;
+    padding: .5rem;
+    width: 100%;
+    table-layout: fixed;
+
+    padding: 5rem 0;
+    
+    text-align: left;
+}
+
+.text-color {
+    color: #fff;
+    margin: 0 1rem;
+}
+
+.tbl-body{
+    background-color: #2C3034;
+    padding: .5rem;
+    width: 100%;
+    table-layout: fixed;
+    
+    padding: 5rem 0;
+
+    text-align: left;
+}
+
+.container-cust{
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+    background-color: aqua;
+}
+
+.margin-top{
+    margin-top: 1rem;
+}
+
+#toggle{
+    color: #999;
+
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#toggle:hover{
+    text-decoration: none;
+}
