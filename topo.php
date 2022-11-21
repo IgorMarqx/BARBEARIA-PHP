@@ -7,7 +7,7 @@ include("config.inc.php");
         <ul class="nav">
             <li><a href="?pg=principal">Home</a></li>
             <?php
-            $busca = "Select * from paginas order by id";
+            $busca = "Select * from contpaginas order by id";
 
             $todos = mysqli_query($conn, $busca);
 
@@ -20,10 +20,12 @@ include("config.inc.php");
             <?php
             }
             ?>
-            <li><a href="?pg=quemsomos">Sobre nós</a></li>
             <li><a href="?pg=servicos">Serviços</a></li>
             <li><a href="?pg=agendamento">Agendamento</a></li>
             <li><a href="?pg=faleconosco">Fale conosco</a></li>
         </ul>
+        <div class="admin nav">
+            <li><a href="./admin/login.php"><i id="user" class="fa-solid fa-user"></i>Admin</a></li>
+        </div>
     </div>
 </header>

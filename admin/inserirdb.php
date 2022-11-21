@@ -4,7 +4,7 @@ $nome = $_POST['nome'];
 $link = $_POST['link'];
 $texto = $_POST['descricao'];
 
-$sql = "INSERT INTO barbearia VALUES 
+$sql = "INSERT INTO contPaginas VALUES 
 ('', '$nome', '$link', '$texto')";
 
 $insert = mysqli_query($conn, $sql);

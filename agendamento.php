@@ -3,28 +3,29 @@
     <form id="agendamento" action="?pg=agendamentodb" method="post">
 
         <label>Nome:</label> <input placeholder="Insira seu nome" type="text" class="form-control" name="nome" required="" data-validation-required-message="Please enter your name.">
-        <label>Telefone: </label><input type="tel" class="form-control" name="telefone" />
-        <label>Data de Agendamento:</label> <input type="date" class="form-control" name="data" />
+        <label>Telefone: </label><input required placeholder="Insira seu número" type="text" class="form-control" name="telefone" />
+        <label>Data de Agendamento:</label> <input required type="date" class="form-control" name="data" />
         
-        <div id="selecHour">
+        <div >
             <label for="">Informe o horário que deseja cortar:</label>
-            <select class="form-control" name="horario">
-                <option value="">Selecione um Horário</option>
+            <select required class="form-control" name="horario" id="selecHour">
+                <option value="1">Selecione um Horário</option>
                 <option value="10:30">10:30</option>
                 <option value="12:30">12:30</option>
                 <option value="13:00">13:00</option>
+                <option value="4">Informe o horário que deseja!</option>
             </select>
         </div>
 
         <div style="display: none;" id="custom">
-            <label for="">Escolha seu Horário</label>
-            <input placeholder="Insira o horário que deseja" class="form-control" type="text">
+            <label for="">Escolha o horário que você prefere</label>
+            <input placeholder="Insira o horário que deseja" name="horario" class="form-control" type="text" id="teste" >
         </div>
         <a id="toggle" style="display: block;" href="##">Escolha seu horário</a>
 
 
         <label for="">Selecione o barbeiro</label>
-        <select class="form-control" name="barbeiro" id="">
+        <select required class="form-control" name="barbeiro" id="">
             <option value="">Selecione um Barbeiro</option>
             <option value="Wesley">Barbeiro Wesley</option>
             <option value="Wagner">Barbeiro Wagner</option>
@@ -33,13 +34,20 @@
         </select>
 
         <label for="">Selecione o tipo de corte</label>
-        <select class="form-control" name="tipCorte" id="">
-            <option value="">Selecione um Corte</option>
+        <select required class="form-control" name="tipCorte" id="selectCorte">
+            <option value="1">Selecione um Corte</option>
             <option value="Degradê">Corte Degradê</option>
             <option value="Militar">Corte Militar</option>
             <option value="Social">Corte Social</option>
             <option value="Barba">Barba</option>
+            <option value="4">Informe o corte que deseja!</option>
         </select>
+        <div style="display: none;" id="corte">
+            <label for="">Insira o tipo de corte que você deseja</label>
+            <input placeholder="Insira o horário que deseja" name="tipCorte" class="form-control" type="text" id="teste" >
+        </div>
+        <a id="toggleCorte" style="display: block;" href="##">Escolha seu horário</a>
+        
         <br>
         <button type="submit" class="btn btn-outline-dark">Registrar Agendamento</button>
     </form>
