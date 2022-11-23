@@ -11,30 +11,30 @@
 </script>
 <?php
 
-$busca = "Select * from paginas order by id";
+$busca = "Select * from contpaginas order by id";
 
 $todos = mysqli_query($conn, $busca);
 
 ?>
 
 <p>
-    <a href="?pg=inserir" class="butao">Inserir Página</a>
-    <a href="../?pg=principal" class="butao">Sair do admin</a>
+    <a href="?pg=inserir" class="btn btn-success">Inserir Página</a>
+    <a href="../?pg=principal" class="btn btn-danger">Sair do admin</a>
 </p>
-<table style="background-color: #262626;">
-    <tr style="color: #fff;">
-        <td style="width: 25px;">Id</td>
-        <td style="width: 205px;">Titulo</td>
-        <td style="width: 105px;">Alterar</td>
-        <td style="width: 105px;">Excluir</td>
+<table class="tbl-head" style="background-color: #262626;">
+    <tr style="color: #fff;" class="tdList">
+        <td style="width: 25px; text-align: center;" >Id</td>
+        <td style="width: 205px; text-align: center;">Titulo</td>
+        <td style="width: 105px; text-align: center;">Alterar</td>
+        <td style="width: 105px; text-align: center;">Excluir</td>
     </tr>
     <?php while ($dados = mysqli_fetch_array($todos)) { ?>
 
-        <tr>
-            <td><?= $dados['id']; ?></td>
-            <td><?= $dados['nome']; ?></td>
-            <td><a href="?pg=alterar&id=<?= $dados['id']; ?>"><i class="glyphicon glyphicon-pencil"></i></a></td>
-            <td><a href="javascript:confirmaExclusao('?pg=excluir&id=<?= $dados['id']; ?>')" class="ask">
+        <tr class="tbl-body">
+            <td style="text-align: center; color: #fff;"><?= $dados['id']; ?></td>
+            <td style="text-align: center; color: #fff;"><?= $dados['nome']; ?></td>
+            <td style="text-align: right;"><a href="?pg=alterar&id=<?= $dados['id']; ?>"><i class="glyphicon glyphicon-pencil"></i></a></td>
+            <td style="text-align: right;"><a href="javascript:confirmaExclusao('?pg=excluir&id=<?= $dados['id']; ?>')" class="ask">
                     <i class="glyphicon glyphicon-remove"></i></a></td>
         </tr>
 

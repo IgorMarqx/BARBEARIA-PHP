@@ -340,21 +340,6 @@ footer{
     text-decoration: none;
 }
 
-.butao{
-    background-color: #262626;
-    color: #fff;
-    padding: 1rem;
-
-    text-decoration: none;
-    border-radius: 1vh;
-}
-
-.butao:hover{
-    text-decoration: none;
-    color: #ffff;
-    background-color: #474747;
-}
-
 .container-adm{
     display: flex;
     align-items: center;
@@ -454,3 +439,17 @@ footer{
 
     transform: rotate(50deg);
 }
+
+.listColor{
+    color: #fff;
+
+    padding: 1rem;
+}
+
+.tableList{
+    padding: 1rem;
+}
+
+.tableList tr{
+}
+

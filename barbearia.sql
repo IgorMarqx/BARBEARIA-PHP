@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 16-Nov-2022 às 18:36
+-- Generation Time: 23-Nov-2022 às 01:57
 -- Versão do servidor: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -35,17 +35,34 @@ CREATE TABLE IF NOT EXISTS `agendamento` (
   `barbeiro` varchar(255) NOT NULL,
   `tipCorte` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
 
 --
--- Extraindo dados da tabela `agendamento`
+-- Estrutura da tabela `contpaginas`
 --
 
-INSERT INTO `agendamento` (`id`, `nome`, `telefone`, `data`, `horario`, `barbeiro`, `tipCorte`) VALUES
-(1, 'Igor marques', '986531492', '2022-11-18', '13:00', 'Junior', 'Barba'),
-(2, 'adalmir', '986531492123', '2022-12-08', '10:30', 'Wesley', 'DegradÃª'),
-(3, 'Kaue', '98712312', '2022-11-25', '12:30', 'Wagner', 'DegradÃª'),
-(4, 'Igor', '', '0000-00-00', '', '', '');
+CREATE TABLE IF NOT EXISTS `contpaginas` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255) NOT NULL,
+  `link` varchar(255) NOT NULL,
+  `descricao` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `crudadmin`
+--
+
+CREATE TABLE IF NOT EXISTS `crudadmin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(255) NOT NULL,
+  `senha` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -61,7 +78,7 @@ CREATE TABLE IF NOT EXISTS `formulario` (
   `assunto` varchar(255) NOT NULL,
   `mensagem` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
 -- Extraindo dados da tabela `formulario`
@@ -74,7 +91,8 @@ INSERT INTO `formulario` (`id`, `nome`, `email`, `telefone`, `assunto`, `mensage
 (4, 'Marcos', '', 9812371, '', ''),
 (5, 'Marcos', '', 9812371, '', ''),
 (6, 'Luan', 'luan@gmail.com', 2147483647, 'TESTANDO', 'TESTANDO 123'),
-(7, 'Igor marques', 'igormarquesdeazevedo11@gmail.com', 9812371, 'CABELO', 'TESTE');
+(7, 'Igor marques', 'igormarquesdeazevedo11@gmail.com', 9812371, 'CABELO', 'TESTE'),
+(8, 'Luan', 'luan@gmail.com', 981237817, '0i9uasdi0jojkqw', 'OLA TESTANDoasok dnasiodjaspod');
 
 -- --------------------------------------------------------
 
