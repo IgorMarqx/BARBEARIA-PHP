@@ -1,4 +1,7 @@
 <?php
+  $conn = mysqli_connect("localhost","root","");
+
+  $db = mysqli_select_db($conn,"barbearia");
 
 $id =         $_POST['id'];
 $nome =       $_POST['nome'];
@@ -18,6 +21,6 @@ if(!$altera){
     <a href='?pg=/listar'>Voltar</a>";
 }else{
    echo "<h3>Cadastrada com sucesso!</h3>
-<a href='?pg=listar'>Voltar</a>";
+    <a href='?pg=listar'>Voltar</a>";
 }
 ?>

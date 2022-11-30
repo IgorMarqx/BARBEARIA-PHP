@@ -450,6 +450,30 @@ footer{
     padding: 1rem;
 }
 
-.tableList tr{
+.admin-top{
+    background-color: #000;
 }
 
+.admin-top div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 8vh;
+    gap: 2.2rem;
+}
+
+.admin-top div a{
+    color: #fff;
+    font-size: 2rem;
+    transition: all .5s;
+}
+
+.admin-top div a:hover{
+    background-color: #fff;
+    color: #000;
+
+    padding: 1.2rem;
+    text-decoration: none;
+    transition: all .5s;
+}
