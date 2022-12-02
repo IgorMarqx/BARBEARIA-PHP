@@ -4,7 +4,7 @@ $senha = $_POST['senha'];
 
 $conn = mysqli_connect("localhost","root","");
 
-$db = mysqli_select_db($conn,"crudadmin");
+// $db = mysqli_select_db($conn,"crudadmin");
 
 
  if($login != "admin" && $senha != "senha"){

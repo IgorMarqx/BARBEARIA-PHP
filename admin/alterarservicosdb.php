@@ -20,6 +20,6 @@
         echo "Ocorreu um erro ao atualizar dados no banco de dados. <br>
         <a href='admin.servicos.php'>Voltar</a>";
     }else{
-       echo "<h3>Cadastrada com sucesso!</h3>
-        <a href='admin.servicos.php'>Voltar</a>";
+        echo "<h3>Cadastrado com sucesso</h3>";
+        header("Refresh: 1, ./admin.servicos.php");
     }

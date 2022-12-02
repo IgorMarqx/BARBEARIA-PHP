@@ -20,10 +20,10 @@ include_once('./danger.php');
 
 <div class="container">
     <h2>AGENDAMENTO ADMIN</h2>
-    <form id="agendamento" action="../?pg=agendamentodb" method="post">
+    <form id="agendamento" action="./agendamentodb.admin.php" method="post">
 
         <label>Nome:</label> <input placeholder="Insira seu nome" type="text" class="form-control" name="nome" required="" data-validation-required-message="Please enter your name.">
-        <label>Telefone: </label><input required placeholder="Insira seu número" type="number" class="form-control" name="telefone" />
+        <label>Telefone: </label><input required placeholder="0000-0000" type="number" class="form-control" name="telefone" />
         <label>Data de Agendamento:</label> <input required type="date" class="form-control" name="data" />
 
         <!-- <div >
@@ -39,7 +39,7 @@ include_once('./danger.php');
 
         <div id="custom">
             <label for="">Escolha o horário que você prefere</label>
-            <input placeholder="Insira o horário que deseja" name="horario" class="form-control" type="text" id="selecHour">
+            <input placeholder="Ex: 14hrs" name="horario" class="form-control" type="text" id="selecHour">
         </div>
         <!-- <a id="toggle" style="display: block;" href="##">Escolha seu horário</a> -->
 
@@ -64,7 +64,7 @@ include_once('./danger.php');
         </select> -->
         <div id="corte">
             <label for="">Insira o tipo de corte que você deseja</label>
-            <input placeholder="Insira o corte que deseja" name="tipCorte" class="form-control" type="text" id="teste">
+            <input placeholder="Ex: Degradê" name="tipCorte" class="form-control" type="text" id="teste">
         </div>
         <!-- <a id="toggleCorte" style="display: block;" href="##">Escolha seu horário</a> -->
 
