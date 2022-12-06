@@ -21,5 +21,5 @@
         <a href='admin.servicos.php'>Voltar</a>";
     }else{
         echo "<h3>Cadastrado com sucesso</h3>";
-        header("Refresh: 1, ./admin.servicos.php");
+        header("Refresh: 0, ./admin.servicos.php");
     }

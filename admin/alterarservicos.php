@@ -32,11 +32,11 @@ while ($dados = mysqli_fetch_array($busca)) {
             
             <label for="barb">Selecione um novo barbeiro</label>
             <select id="barb" required class="form-control" name="barbeiro" id="">
-                <option value="<?= $dados['barbeiro']; ?>">Selecione um Barbeiro</option>
-                <option value="<?= $dados['barbeiro']; ?>">Barbeiro Wesley</option>
-                <option value="<?= $dados['barbeiro']; ?>">Barbeiro Wagner</option>
-                <option value="<?= $dados['barbeiro']; ?>">Barbeiro Junior</option>
-                <option value="<?= $dados['barbeiro']; ?>">Barbeiro Fabricio</option>
+                <option value="">Selecione um Barbeiro</option>
+                <option value="Wesley">Barbeiro Wesley</option>
+                <option value="Wagner">Barbeiro Wagner</option>
+                <option value="Junior">Barbeiro Junior</option>
+                <option value="Fabricio">Barbeiro Fabricio</option>
             </select>
 
             <label for="cut">Informe um novo corte</label>
