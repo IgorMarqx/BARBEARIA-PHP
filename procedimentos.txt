@@ -1,0 +1,8 @@
+Procedimentos para navegação na aplicação
+
+- Criar uma base de dados de nome "barbearia"
+
+- Importar o banco de dados de nome barbearia(2).sql para esta base de dados
+
+- Podendo navegar livremente na aplicação, na parte do Admin os login e senha serão ambos "admin"
+para que a funcionalidades de tal possam ser acessadas
