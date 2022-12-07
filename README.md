@@ -3,4 +3,4 @@ Aplicação desenvolvida para trabalho da faculdade em PHP feito por Igor Marque
 
 Descrição do Projeto:
 
-Projeto web desenvolvido que tem como tema uma Barbearia usando as tecnologias HTML, CSS, PHP e JavaScript onde clientes podem ir até o site e agendar uma corte com o barbeiro desejado e na hora desejada, além de um acesso do admin para poder controlar tais agendamentos e outras funcionalidades da aplicação
+Projeto web desenvolvido que tem como tema uma Barbearia usando as tecnologias HTML, CSS, PHP e JavaScript onde clientes podem ir até o site e agendar uma corte com o barbeiro desejado e na hora desejada, além de um acesso do admin para poder controlar tais agendamentos e outras funcionalidades da aplicação. O passo a passo de como fazer a aplicação funcionar e navegar nela estarão no procedimentos.txt
